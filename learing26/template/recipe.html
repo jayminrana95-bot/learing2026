@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        recipe of tea
+    </h1>
+     <h1>
+        recipe name : {{name}}
+    </h1>
+     <h1>
+        time : {{time}} min
+    </h1>
+     <h1>
+        ingredient : {{ingredient}}
+    </h1>
+    {%for in ingredient %}
+     <h3>{{i}}</h3>
+     {% endfor %}
+
+     {%if time <= 2%}
+     <h1>tea is a testi </h1>
+     {% else %}
+     <h1>tea is not a testi</h1>
+     {% endif %}
+</body>
+</html>
